@@ -1,0 +1,63 @@
+.Pizzas{
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.PizzaPodrob{
+    margin: 16px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 144px;
+}
+
+.PizzaName{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.PizzaOpis{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.PizzaBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButSelect{
+    width: 131px;
+    height: 48px;
+    border: none;
+    outline: none;
+    background-color: #FF7010;
+    border-radius: 6px;
+    padding: 13px 32px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.PizzaPrice{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF7010;
+}
+
+.PizzaImg{
+    width: 60px;
+    height: 100px;
+}
+
+.PizzaImg{
+    width: 300px;
+    height: 290px;
+    border-radius: 6px 6px 0 0;
+}

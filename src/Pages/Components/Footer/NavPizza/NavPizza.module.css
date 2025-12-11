@@ -1,0 +1,17 @@
+.NavPizza{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.Name{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.Ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,26 @@
+.Ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.Li{
+    width: 135px;
+    height: 104px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LiTxt, .LiTxtRed{
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LiTxtRed{
+    color: red;
+}
