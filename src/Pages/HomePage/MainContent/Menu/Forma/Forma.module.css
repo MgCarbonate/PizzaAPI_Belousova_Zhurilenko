@@ -1,0 +1,76 @@
+.Forma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Otz{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Handa{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Group{
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.Nazv, .Price, .Opis{
+    margin-top: -6px;
+}
+
+.Inpa, .Mnogo, .Vstav{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.Butik{
+    width: 150px;
+    height: 50px;
+    background-color: #FF7010;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.Vstav{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.Shir{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+

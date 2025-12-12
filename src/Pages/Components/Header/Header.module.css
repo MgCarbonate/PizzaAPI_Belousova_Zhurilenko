@@ -1,0 +1,63 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HeaderTop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 105px;
+    height: 40px;
+}
+
+.Hr{
+    width: 100%;
+    border: 1px solid #F0F0F0;
+}
+
+.TopTxt{
+    font-size: 14px;
+    margin: 0;
+}
+
+.TopLeft, .TopRight{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.HeaderLocation, .TopProfile{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 20px;
+}
+
+.HeaderBottom{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 105px;
+    margin-bottom: 12px;
+}
+
+.BottomLeft{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.BottomRight{
+    width: 89px;
+    height: 40px;
+    background-color: #FF7010;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 8px;
+}

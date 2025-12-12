@@ -1,0 +1,38 @@
+.Adress{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AdressTxt{
+    font-size: 18px;
+}
+
+.AdressField{
+    border: 1px solid #F0F0F0;
+    width: 783px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    padding: 14px 12px;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.ButProver{
+    width: 150px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #FF7010;
+    color: white;
+    font-size: 16px;
+}

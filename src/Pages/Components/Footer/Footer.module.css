@@ -1,0 +1,39 @@
+.Footer{
+    display: flex;
+    background-color: white;
+    padding: 32px 105px;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.FooterLeft{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.FooterLogoTxt{
+    font-size: 30px;
+}
+
+.FooterRight{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FooterContacts{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.FooterContInfo, .FooterSocMedia{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.FooterSocMedias{
+    display: flex;
+    gap: 24px;
+}
