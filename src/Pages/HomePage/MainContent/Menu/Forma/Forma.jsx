@@ -1,8 +1,20 @@
 import { useState } from "react";
 import axios from "axios";
 import styles from "./Forma.module.css";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 function Forma({ onProductCreated }) {
+    const [isVisible, setIsVisible] = useState(true);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const [count, setCount] = useState(0);
+
+    // Пример 6: Gesture-based animation
+    const dragVariants = {
+        drag: { scale: 1.1, cursor: "grabbing" },
+    };
+
+
     const [formData, setFormData] = useState({
         name: "",
         price: "",
@@ -89,7 +101,7 @@ function Forma({ onProductCreated }) {
 
 
     return (
-        <div className={styles.Forma}>
+        <div className={styles.Forma} >
             <h2 className={styles.Otz}>Создание товара</h2>
             <form onSubmit={handleSubmit} encType="multipart/form-data" className={styles.Handa}>
                 <div className={styles.Group}>
@@ -147,9 +159,13 @@ function Forma({ onProductCreated }) {
                 </div>
                 {message && <div className={`styles.${messageType}`}>{message}</div>}
                 <div className={styles.Shir}>
-                    <button type="submit" disabled={isSubmitting} className={styles.Butik}>
+                    <motion.button type="submit" disabled={isSubmitting} className={styles.Butik} drag
+                        dragConstraints={{ left: 0, right: 200, top: 0, bottom: 100 }}
+                        variants={dragVariants}
+                        whileDrag="drag"
+                        dragElastic={0.2}>
                         {isSubmitting ? "Создание..." : "Создать"}
-                    </button>
+                    </motion.button>
                 </div>
             </form>
         </div>

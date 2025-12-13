@@ -1,6 +1,38 @@
+import { useState } from 'react';
 import styles from './Pizzas.module.css'
+import { motion, AnimatePresence } from "framer-motion";
 
 function Pizzas({ product }) {
+
+    const [isVisible, setIsVisible] = useState(true);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const [count, setCount] = useState(0);
+
+    // Пример 2: Анимация при наведении
+    const hoverVariants = {
+        hover: {
+            scale: 1.05,
+            rotate: 2,
+            boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+            transition: { type: "spring", stiffness: 300 },
+        },
+    };
+
+    // Пример 3: Сложная анимация с keyframes
+    const complexVariants = {
+        animate: {
+            x: [0, 100, 0],
+            y: [0, -50, 0],
+            rotate: [0, 180, 360],
+            borderRadius: ["10%", "50%", "10%"],
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+            },
+        },
+    };
+
 
     return (
         <>
@@ -14,8 +46,11 @@ function Pizzas({ product }) {
                         ? product.description.substring(0, 50) + "..."
                         : product.description || "Описание отсутствует"}</p>
                     <div className={styles.PizzaBottom}>
-                        <button className={styles.ButSelect}>Выбрать</button>
-                        <p className={styles.PizzaPrice}>от 399 ₽</p>
+                        <motion.button className={styles.ButSelect} variants={hoverVariants}
+                            whileHover="hover">Выбрать</motion.button>
+                        <motion.p className={styles.PizzaPrice} variants={complexVariants}
+                            animate="animate"
+                        >от 399 ₽</motion.p>
                     </div>
                 </div>
 
